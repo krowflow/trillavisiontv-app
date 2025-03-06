@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    @apply h-full;
+  }
+
+  body {
+    @apply font-sans antialiased text-gray-900;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md font-medium transition-colors;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary-light focus:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-light;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-primary hover:bg-secondary-dark;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Custom scrollbar styles */
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #8E05C2 #2A0944;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #2A0944;
+    border-radius: 4px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #8E05C2;
+    border-radius: 4px;
+    border: 2px solid #2A0944;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #580F96;
+  }
+
+  /* Custom scrollbar styles */
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #8E05C2 #2A0944;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #2A0944;
+    border-radius: 4px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #8E05C2;
+    border-radius: 4px;
+    border: 2px solid #2A0944;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #580F96;
+  }
+}
